@@ -1,6 +1,7 @@
 import './app/router.ts';
 import './app/styles/style.scss';
 
+alert('To see the website you need to install the server. Server source link: https://github.com/mikhama/async-race-api.')
 console.log(
     'TOTAL SCORE: 155 \n'+
     'Basic structure:\n' +
