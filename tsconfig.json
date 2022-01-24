@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "../dist/",
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "es2017",
+    "allowJs": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts"]
+}

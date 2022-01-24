@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import '_base.scss';
+@import '_vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  min-height: 100vh;
+}
+
+.btn {
+  background: linear-gradient(89.51deg, #c02525 -3.41%, #3a1111 103.35%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: $text-color;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform linear 0.1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.bg-car {
+  //filter: blur(1px);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

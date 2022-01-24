@@ -1,0 +1,141 @@
+@import '../../styles/vars';
+
+.garage-upper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.settings {
+  max-width: 400px;
+  &__title {
+    margin-bottom: 10px;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  input {
+    height: auto;
+    outline: none;
+  }
+}
+
+.garage-info {
+  font-size: 2.4rem;
+  text-align: end;
+}
+
+.cars {
+  margin-top: 20px;
+
+  .car {
+    width: 100px;
+
+    padding-top: 14px;
+  }
+
+  .car-model {
+    margin-left: 16px;
+
+    padding: 5px;
+
+    font-size: 18px;
+    color: $text-color;
+
+    border-left: 2px solid tomato;
+  }
+}
+
+.car-controls {
+  margin-left: 10px;
+
+  .select-btn {
+    margin-right: 20px;
+  }
+}
+
+.track {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  border-bottom: 4px dashed #fff;
+
+  .car-control-container {
+    display: flex;
+  }
+
+  .engine-panel {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+
+    .engine-icon {
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: 2px dashed;
+      border-radius: 2px;
+
+      font-size: 22px;
+
+      cursor: pointer;
+    }
+
+    .engine-icon:disabled {
+      color: gray;
+    }
+
+    .engine-icon.enabling {
+      color: yellow;
+    }
+  }
+
+  .start-btn {
+    color: lawngreen;
+  }
+
+  .stop-btn {
+    color: red;
+  }
+
+  .finish {
+    //margin-top: -80px;
+    transform: translateY(48px) translateX(-120px);
+    font-size: 60px;
+  }
+}
+
+.game-result {
+  position: fixed;
+  top: 50%;
+  left: calc(50% - 250px);
+
+  width: 500px;
+
+  font-size: 4rem;
+  text-align: center;
+  background-color: rgba(48, 142, 0, 0.063);
+  border-color: rgb(48, 142, 0);
+  color: rgb(48, 142, 0);
+
+  border-radius: 8px;
+}
+
+.hidden {
+  visibility: hidden;
+}
